@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-motion="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>礼序 · 故宫外朝三大殿</title>
+<meta name="description" content="太和殿、中和殿、保和殿——故宫外朝三大殿的沉浸式导览：形制、尺度、礼仪、匾联与沿革，配自绘建筑线稿与滚动叙事动画。">
+<meta name="color-scheme" content="dark light">
+<!--__CSS__-->
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主内容</a>
+
+<!-- 自绘图标系统：24×24 线描，stroke-width 1.75，同一网格与端点风格 -->
+<svg class="sr-only" aria-hidden="true" focusable="false" width="0" height="0">
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M5 13l7 7 7-7"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M5 11l7-7 7 7"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5-5 2.2 2.2-5z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+</svg>
+
+<header class="site-nav">
+  <a class="site-nav__brand" href="#intro">故宫 · 三大殿</a>
+  <nav class="site-nav__links" aria-label="三殿导航">
+    <a class="site-nav__link" href="#taihe">太和殿</a>
+    <a class="site-nav__link" href="#zhonghe">中和殿</a>
+    <a class="site-nav__link" href="#baohe">保和殿</a>
+    <button type="button" class="icon-btn" id="motion-toggle" aria-label="关闭动态装饰" aria-pressed="false">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-pause"></use></svg>
+      <span class="icon-btn__label" data-motion-label>关闭动态装饰</span>
+    </button>
+    <button type="button" class="icon-btn" id="index-open" aria-label="导览索引" aria-haspopup="dialog">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-menu"></use></svg>
+      <span class="icon-btn__label">导览索引</span>
+    </button>
+  </nav>
+</header>
+
+<nav class="chapter-rail" aria-label="章节快速跳转">
+  <a class="chapter-rail__item" href="#taihe" aria-label="太和殿">壹</a>
+  <a class="chapter-rail__item" href="#zhonghe" aria-label="中和殿">贰</a>
+  <a class="chapter-rail__item" href="#baohe" aria-label="保和殿">叁</a>
+</nav>
+
+<main id="main" tabindex="-1">
+
+  <!-- ==================== 序章 ==================== -->
+  <section id="intro" class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero__text">
+        <p class="hero__eyebrow">故宫外朝 · 中轴线北端</p>
+        <h1 class="hero__title" id="hero-title">一道中轴，三重殿宇</h1>
+        <p class="hero__sub">从威仪，到中和，再到文脉。太和殿、中和殿、保和殿并立于三层汉白玉台基之上，是紫禁城把「天下一人」写进木与石的全部办法。</p>
+        <p><a class="hero__cta" href="#taihe">沿中轴线进入<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-down"></use></svg></a></p>
+      </div>
+      <figure class="hero__figure">
+        <div class="hero__stage">
+          <!--__SVG:axis-->
+        </div>
+        <figcaption class="stage__caption"><strong>总轴示意图</strong> —— 依据公开建筑信息绘制的艺术示意（非测绘比例），中轴线自南向北依次为太和殿、中和殿、保和殿。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="chapter-chips container" role="navigation" aria-label="三殿快捷跳转">
+    <a class="chapter-chips__item" href="#taihe">壹 · 太和殿</a>
+    <a class="chapter-chips__item" href="#zhonghe">贰 · 中和殿</a>
+    <a class="chapter-chips__item" href="#baohe">叁 · 保和殿</a>
+  </div>
+
+  <!-- ==================== 太和殿 ==================== -->
+  <section id="taihe" class="chapter" aria-labelledby="taihe-title">
+    <div class="container">
+      <div class="chapter__grid">
+        <div class="chapter__body">
+          <p class="section-kicker">壹 · 威仪</p>
+          <h2 class="chapter__title" id="taihe-title">太和殿</h2>
+          <p class="chapter__lead">外朝三大殿中最南面的一座，也是紫禁城里规模最大、开间最多、进深最大、屋顶最高的殿宇——中国现存古建筑中面积最大的一座，明清两朝北京城内的最高建筑。</p>
+
+          <h3>形制</h3>
+          <p>太和殿为<strong>重檐庑殿顶</strong>：上下两重屋檐，正脊两端的螭吻各由 13 块琉璃构件组成，高 3.40 m、宽 2.68 m、厚 0.32 m、重约 4.3 吨，是紫禁城内最大的螭吻。垂脊檐角排列着骑凤仙人与 10 只琉璃神兽——依次为龙、凤、狮子、天马、海马、狻猊、狎鱼、獬豸、斗牛、行什——这样的数量在现存古建筑中仅此一见。</p>
+          <p>台基之上是 11 开间 × 5 进深的柱网，檐下施以密集斗栱，室内外梁枋饰和玺彩画，门窗上部嵌菱花格纹、下部浮雕云龙图案。太和殿共有立柱 72 根，最高 12.7 m、最粗直径 1.06 m；今存的柱子为康熙年间重建时以松木拼接而成，而宝座两侧那 6 根沥粉贴金云龙图案巨柱是紫禁城其他建筑所没有的——柱上的龙头，全都望向宝座。</p>
+
+          <h3>礼仪</h3>
+          <ul>
+            <li>举行皇帝即位、大婚、册立皇后、命将出征等最高等级的大典。</li>
+            <li>每年万寿节、元旦、冬至「三大节」举行大朝仪，接受文武百官朝贺。</li>
+            <li>每月朔望举行常朝仪，供皇帝日常临朝奏对。</li>
+            <li>清朝初年曾在此举行殿试；传胪仪式至今仍在此殿举行。</li>
+          </ul>
+          <p>殿外称「丹陛」，俗称月台，上陈设日晷、嘉量各一，铜龟、铜鹤各一对，铜鼎 18 座。台基高 8.13 m，四周环绕汉白玉栏杆，栏杆下安有排水用的石雕龙头——每逢下雨，排水龙头一齐喷水，形成「千龙吐水」的景象。</p>
+
+          <h3>营建</h3>
+          <p>殿内地面铺砌金砖共 4718 块，每块边长约 0.67 m。这种砖产自苏州等地，烧制程序十分复杂，前后花费时间长达半年以上，成品还需经过仔细挑选才能铺砌。宝座为明嘉靖年间遗物，通高 172.5 cm、座宽 158.5 cm，髹金漆云龙纹、雕 13 条金龙；其上藻井正中雕蟠卧巨龙，龙头下探口衔大铜珠「轩辕镜」。</p>
+
+          <h3>匾联</h3>
+          <blockquote class="quote">
+            <p class="quote__plaque">建极绥猷</p>
+            <p class="quote__couplet">帝命式于九围兹惟艰哉奈何弗敬，天心佑夫一德永言保之遹求厥宁。</p>
+            <p class="quote__source">匾额与对联均为乾隆帝御题。</p>
+          </blockquote>
+        </div>
+
+        <div class="stage" data-scene="taihe">
+          <figure>
+            <div class="stage__frame">
+              <!--__SVG:taihe-->
+            </div>
+            <figcaption class="stage__caption"><strong>太和殿</strong> —— 重檐庑殿顶正视为艺术性示意，柱网为 11 开间；脊兽以符号化图形示意，非精细拟兽雕塑，亦非测绘复原。</figcaption>
+          </figure>
+
+          <div class="metrics">
+            <div class="metric">
+              <p class="metric__value">11<span class="metric__unit">间</span></p>
+              <p class="metric__label">面阔</p>
+              <p class="metric__note">63.96 m，紫禁城开间最多。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">72<span class="metric__unit">根</span></p>
+              <p class="metric__label">立柱</p>
+              <p class="metric__note">其中 6 根为沥粉贴金云龙巨柱。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">2377<span class="metric__unit">m²</span></p>
+              <p class="metric__label">建筑面积</p>
+              <p class="metric__note">中国现存古建筑中面积最大的一座。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">35.05<span class="metric__unit">m</span></p>
+              <p class="metric__label">通高</p>
+              <p class="metric__note">殿身 26.92 m，通高含须弥座与台基。</p>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="hotspot" data-hotspot aria-expanded="false" aria-controls="taihe-note-beasts">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"></use></svg>
+              骑凤仙人 + 10 只神兽
+            </button>
+            <div class="hotspot__panel" id="taihe-note-beasts" hidden>
+              <h4>垂脊神兽</h4>
+              <p>骑凤仙人之后依次为龙、凤、狮子、天马、海马、狻猊、狎鱼、獬豸、斗牛、行什，共 10 只，数量为现存古建筑中所仅见。它们同时是屋脊铁钉的「钉帽」，用以保护铁钉免受雨雪侵蚀。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 中和殿 ==================== -->
+  <section id="zhonghe" class="chapter chapter--figure-left" aria-labelledby="zhonghe-title">
+    <div class="container">
+      <div class="chapter__grid">
+        <div class="chapter__body">
+          <p class="section-kicker">贰 · 节制</p>
+          <h2 class="chapter__title" id="zhonghe-title">中和殿</h2>
+          <p class="chapter__lead">三大殿中面积最小的一座，却也是形制最独特的一座：正方形平面、单檐四角攒尖顶、屋面正中一枚铜胎鎏金宝顶。「中和」二字取自《礼记·中庸》——「中也者，天下之本也；和也者，天下之道也」。</p>
+
+          <h3>形制</h3>
+          <p>中和殿高 29 m，平面呈正方形，为<strong>单檐四角攒尖顶</strong>，屋面覆黄色琉璃瓦，中置铜胎鎏金宝顶。面阔三间、进深三间、四面出廊，金砖铺地，建筑面积 580 m²，是三大殿中最小的。</p>
+          <p>四面开门：南面为三交六椀槅扇门 12 扇，东、北、西三面各有槅扇门 4 扇；门前石阶南北各三出、东西各一出，中间是浮雕云龙纹御路。门窗形制取自《大戴礼记》中提到的「明堂」，刻意避免了与三大殿其余两殿的雷同。内外檐都饰有金龙和玺彩画，天花采用沥粉贴金正面龙。</p>
+
+          <h3>礼仪</h3>
+          <ul>
+            <li>大典前供皇帝小憩，并接受执事官员的朝拜。</li>
+            <li>皇帝亲祭天坛、地坛、社稷坛、太庙、先农坛前一日，阅视写有祭文的祝版。</li>
+            <li>祭先农坛暨举行亲耕仪式前一日，查验亲耕仪式要用的种子和农具。</li>
+            <li>皇太后上徽号时，阅视拟好的奏书。</li>
+            <li>清朝每七年纂修一次玉牒（皇家家谱），告成后恭进呈御览并举行存礼。</li>
+            <li>有时皇帝也会在此召见官员或赐食。</li>
+          </ul>
+
+          <h3>营建</h3>
+          <p>殿内正中设有宝座，两旁陈列着两个肩舆——皇帝在紫禁城内活动所乘之轿。殿名亦有来历：嘉靖年间火灾重修后改称中极殿，如今中和殿天花内的构件上，仍然留有明代「中极殿」的墨迹。清顺治二年（1645）始改称中和殿。</p>
+
+          <h3>匾联</h3>
+          <blockquote class="quote">
+            <p class="quote__plaque">允执厥中</p>
+            <p class="quote__couplet">时乘六龙以御天所其无逸，用敷五福而锡极彰厥有常。</p>
+            <p class="quote__source">匾额与对联均为乾隆帝御题；「允执厥中」出自《尚书·大禹谟》。</p>
+          </blockquote>
+        </div>
+
+        <div class="stage" data-scene="zhonghe">
+          <figure>
+            <div class="stage__frame">
+              <!--__SVG:zhonghe-->
+            </div>
+            <figcaption class="stage__caption"><strong>中和殿</strong> —— 单檐四角攒尖顶俯视为艺术性示意，四条斜脊汇于中央鎏金宝顶；九宫格仅作开间分间示意，不等于柱位实测。</figcaption>
+          </figure>
+
+          <div class="metrics">
+            <div class="metric">
+              <p class="metric__value">3<span class="metric__unit">× 3 间</span></p>
+              <p class="metric__label">平面与开间</p>
+              <p class="metric__note">正方形，四面出廊。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">580<span class="metric__unit">m²</span></p>
+              <p class="metric__label">建筑面积</p>
+              <p class="metric__note">三大殿中面积最小的一座。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">29<span class="metric__unit">m</span></p>
+              <p class="metric__label">殿高</p>
+              <p class="metric__note">官方未公布含台基的通高数据。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">12<span class="metric__unit">扇</span></p>
+              <p class="metric__label">南面槅扇门</p>
+              <p class="metric__note">三交六椀槅扇门，其余三面各 4 扇。</p>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="hotspot" data-hotspot aria-expanded="false" aria-controls="zhonghe-note-roof">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"></use></svg>
+              四角攒尖顶与鎏金宝顶
+            </button>
+            <div class="hotspot__panel" id="zhonghe-note-roof" hidden>
+              <h4>三殿中最独特的屋顶</h4>
+              <p>太和殿为重檐庑殿顶、保和殿为重檐歇山顶，中和殿是三殿中唯一的单檐四角攒尖顶，屋面正中置铜胎鎏金宝顶。四条斜脊自四角汇聚于一点，是最容易与另两殿区分的轮廓。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 保和殿 ==================== -->
+  <section id="baohe" class="chapter" aria-labelledby="baohe-title">
+    <div class="container">
+      <div class="chapter__grid">
+        <div class="chapter__body">
+          <p class="section-kicker">叁 · 文脉</p>
+          <h2 class="chapter__title" id="baohe-title">保和殿</h2>
+          <p class="chapter__lead">三殿中最北的一座，也是唯一在主体梁架上保留了明代遗构的一座。它曾做过皇帝寝宫，做过宴飨之所，自乾隆五十四年（1789）起，又成了每科殿试的固定场所——科举时代最接近「殿」这件事的现场。</p>
+
+          <h3>形制</h3>
+          <p>保和殿面阔 9 间、进深 5 间，高 29.50 m，建筑面积 1240 m²，采用<strong>重檐歇山顶</strong>，屋面覆黄色琉璃瓦，上下檐角各安放 9 个小兽。上檐为单翘重昂七踩斗栱，下檐为重昂五踩斗栱；内外檐都采用金龙和玺彩画，天花为沥粉贴金正面龙。</p>
+          <p>它的结构采用「减柱造」特殊法式，<strong>减去殿内前檐六根金柱</strong>，使殿内空间更加开阔。殿内金砖铺地，坐北向南设雕镂金漆宝座，东西两梢间为暖阁。歇山顶与太和殿的庑殿顶最大的不同，在于它有清晰可见的山面三角轮廓。</p>
+
+          <h3>礼仪</h3>
+          <ul>
+            <li>明代为举行大典前皇帝更衣之所。</li>
+            <li>清代每年除夕、正月十五，皇帝在此赐外藩、王公及一二品大臣宴。</li>
+            <li>每岁终，宗人府、吏部在保和殿填写宗室、满洲、蒙古、汉军及各省汉职外藩世职黄册。</li>
+            <li>清初为皇帝寝宫：顺治三年（1646）至十三年（1656）顺治帝居此，时称位育宫；康熙帝自即位至康熙八年（1669）居此，时称清宁宫。</li>
+            <li>乾隆五十四年（1789）起成为每科殿试的固定场所。会试中录取的人称为贡士，其中第一名称会元，殿试由皇帝拟定题目并指定大臣阅卷。</li>
+            <li>顺治至乾隆年间，曾设置以保和殿命名的保和殿大学士一职，属「三殿三阁大学士」之一。</li>
+          </ul>
+
+          <h3>营建</h3>
+          <p>保和殿后阶陛中间有一块雕刻着云、龙、海水和山崖的御路石，人们称之为云龙石雕。石料产自京西房山大石窝，建造时需要一万个以上的工人花费将近一个月的时间拖到工地。</p>
+
+          <h3>匾联</h3>
+          <blockquote class="quote">
+            <p class="quote__plaque">皇建有极</p>
+            <p class="quote__couplet">祖训昭垂我后嗣子孙尚克钦承有永，天心降鉴惟万方臣庶当思容保无疆。</p>
+            <p class="quote__source">匾额与对联均为乾隆帝御题；「皇建有极」意即任君建立天下最高准则。</p>
+          </blockquote>
+        </div>
+
+        <div class="stage" data-scene="baohe">
+          <figure>
+            <div class="stage__frame">
+              <!--__SVG:baohe-->
+            </div>
+            <figcaption class="stage__caption"><strong>保和殿</strong> —— 重檐歇山顶侧前方斜视为艺术性示意，可见山面三角轮廓；虚线标示「减柱造」被减去的前檐六根内金柱，非测绘复原。</figcaption>
+          </figure>
+
+          <div class="metrics">
+            <div class="metric">
+              <p class="metric__value">9<span class="metric__unit">× 5 间</span></p>
+              <p class="metric__label">面阔与进深</p>
+              <p class="metric__note">三殿中最北的一座。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">1240<span class="metric__unit">m²</span></p>
+              <p class="metric__label">建筑面积</p>
+              <p class="metric__note">规模仅次于太和殿。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">6<span class="metric__unit">根</span></p>
+              <p class="metric__label">减柱造</p>
+              <p class="metric__note">减去殿内前檐金柱，空间更开阔。</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">1789<span class="metric__unit">年</span></p>
+              <p class="metric__label">殿试固定</p>
+              <p class="metric__note">乾隆五十四年起，每科殿试在此举行。</p>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="hotspot" data-hotspot aria-expanded="false" aria-controls="baohe-note-jianzhu">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"></use></svg>
+              减柱造与歇山顶
+            </button>
+            <div class="hotspot__panel" id="baohe-note-jianzhu" hidden>
+              <h4>两种「省」</h4>
+              <p>歇山顶是在庑殿顶两山面之上加出三角形山花，既有悬山的举折又有山面的陡坡；减柱造则是在不拆改建筑形制的前提下，把殿内前檐的金柱省去，用抬梁与斗栱跨越，从而获得更开阔的内部空间。两者都是清代木构技术走向成熟的表现。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 时间 ==================== -->
+  <section id="time" class="chapter on-paper" aria-labelledby="time-title">
+    <div class="container">
+      <div class="chapter__grid">
+        <div class="chapter__body">
+          <p class="section-kicker">时序</p>
+          <h2 class="chapter__title chapter__title--wide" id="time-title">三殿同名，六次改名</h2>
+          <p class="chapter__lead">三座殿宇同时诞生，同时改名，又在不同的年代承担了不同的国家仪式。读懂这条时间线，就读懂了三大殿为何各自不同。</p>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__year">1420</p>
+              <h4 class="timeline__label">初建：奉天 · 华盖 · 谨身</h4>
+              <p class="timeline__text">明永乐十八年，三殿在紫禁城落成，初名奉天殿、华盖殿、谨身殿。次年（1421）雷击引发大火，前三殿焚毁。</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__year">1562</p>
+              <h4 class="timeline__label">嘉靖改名：皇极 · 中极 · 建极</h4>
+              <p class="timeline__text">嘉靖四十一年改称皇极殿、中极殿、建极殿。1557 年与 1597 年两度大火之后，三殿均已换过形制。</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__year">1645</p>
+              <h4 class="timeline__label">顺治定名：太和 · 中和 · 保和</h4>
+              <p class="timeline__text">清顺治二年改称太和殿、中和殿、保和殿并沿用至今。保和殿的明代主体梁架自此保留至今。</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__year">1695</p>
+              <h4 class="timeline__label">康熙重建：太和殿定型</h4>
+              <p class="timeline__text">康熙十八年（1679）大火焚尽楠木立柱，现存太和殿为三十四年（1695）起重建、三十六年（1697）落成的形制。</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__year">1789</p>
+              <h4 class="timeline__label">乾隆五十四年：殿试固定于保和殿</h4>
+              <p class="timeline__text">自此每科殿试在保和殿举行，会试中式者为贡士方可应试；传胪仪式则仍留在太和殿，殿试与传胪由此分处两殿。</p>
+            </li>
+          </ol>
+        </div>
+        <div class="chapter__body">
+          <h3>同一条中轴，不同的分工</h3>
+          <p>三大殿的关系并不是简单的「大、中、小」，而是一整套典礼流程的物理展开：皇帝在太和殿接受百官朝贺；大典之前到中和殿小憩、阅视祝版；典礼之后在保和殿更衣、赐宴，后来又在此殿试取士。</p>
+          <p>三殿同坐一座高 8.13 m 的三层汉白玉台基，同覆黄色琉璃瓦、同用朱红立柱与汉白玉栏板。共享的是等级与秩序，区别的是屋顶、开间与职掌。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 对照 ==================== -->
+  <section id="compare" class="chapter on-paper" aria-labelledby="compare-title">
+    <div class="container">
+      <p class="section-kicker">对照</p>
+      <h2 class="chapter__title chapter__title--wide" id="compare-title">三殿一眼可比</h2>
+      <p class="chapter__lead">只看三个数字与三种屋顶，就能说出三大殿的分工。</p>
+
+      <div class="compare" role="group" aria-label="建筑面积比较">
+        <div class="compare__row">
+          <p class="compare__name">太和殿</p>
+          <div class="compare__track"><span class="compare__bar" data-hall="taihe" data-target="1"></span></div>
+          <p class="compare__value">2377 m²</p>
+        </div>
+        <div class="compare__row">
+          <p class="compare__name">中和殿</p>
+          <div class="compare__track"><span class="compare__bar" data-hall="zhonghe" data-target="0.2439"></span></div>
+          <p class="compare__value">580 m²</p>
+        </div>
+        <div class="compare__row">
+          <p class="compare__name">保和殿</p>
+          <div class="compare__track"><span class="compare__bar" data-hall="baohe" data-target="0.5217"></span></div>
+          <p class="compare__value">1240 m²</p>
+        </div>
+      </div>
+
+      <div class="compare-table">
+        <div class="compare-table__row">
+          <p class="compare-table__head">屋顶</p>
+          <dl class="compare-table__body">
+            <dt>太和殿</dt><dd>重檐庑殿顶——正脊两坡，两山面封闭。</dd>
+            <dt>中和殿</dt><dd>单檐四角攒尖顶——四斜脊汇于鎏金宝顶。</dd>
+            <dt>保和殿</dt><dd>重檐歇山顶——悬山两面另加山面三角。</dd>
+          </dl>
+        </div>
+        <div class="compare-table__row">
+          <p class="compare-table__head">开间</p>
+          <dl class="compare-table__body">
+            <dt>太和殿</dt><dd>面阔 11 间 × 进深 5 间（63.96 m × 37 m）。</dd>
+            <dt>中和殿</dt><dd>面阔 3 间 × 进深 3 间，平面正方形。</dd>
+            <dt>保和殿</dt><dd>面阔 9 间 × 进深 5 间。</dd>
+          </dl>
+        </div>
+        <div class="compare-table__row">
+          <p class="compare-table__head">主职</p>
+          <dl class="compare-table__body">
+            <dt>太和殿</dt><dd>大朝仪、传胪与大典。</dd>
+            <dt>中和殿</dt><dd>典礼前的阅视、查验与小憩。</dd>
+            <dt>保和殿</dt><dd>殿试、赐宴、填写黄册；清初为寝宫。</dd>
+          </dl>
+        </div>
+        <div class="compare-table__row">
+          <p class="compare-table__head">匾额</p>
+          <dl class="compare-table__body">
+            <dt>太和殿</dt><dd>建极绥猷</dd>
+            <dt>中和殿</dt><dd>允执厥中</dd>
+            <dt>保和殿</dt><dd>皇建有极</dd>
+          </dl>
+        </div>
+      </div>
+
+      <p><a class="hero__cta" href="#intro" data-scroll-top>返回开篇<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a></p>
+    </div>
+  </section>
+
+  <!-- ==================== 来源 ==================== -->
+  <section id="sources" class="chapter" aria-labelledby="sources-title">
+    <div class="container">
+      <p class="section-kicker">来源与方法</p>
+      <h2 class="chapter__title chapter__title--wide" id="sources-title">资料范围与作图说明</h2>
+
+      <div class="chapter__grid">
+        <div class="chapter__body">
+          <h3>资料范围</h3>
+          <p>本页文字与数字来自故宫博物院官方公开资料及公开百科条目，逐条核对后写入。涉及屋顶形制、开间数、建筑面积、殿高、匾额与对联的内容，均以官方口径为准；对中和殿与保和殿，官方未公布含台基的通高数据，本页因此只记殿身高度，不做推算。</p>
+          <p>本页所有建筑图均为<strong>依据公开建筑信息绘制的艺术性示意（非测绘比例）</strong>。图中的柱网、脊兽、斗栱与台基层数为示意性表达，用于帮助辨认形制差异，不作为工程测量或复原依据。页面不包含任何实景照片或第三方图像资产。</p>
+
+          <h3>引用与延伸阅读</h3>
+          <ul class="site-footer__link-list">
+            <li><a href="https://www.dpm.org.cn/" target="_blank" rel="noopener noreferrer">故宫博物院官方中文站</a></li>
+            <li><a href="https://intl.dpm.org.cn/explore.html" target="_blank" rel="noopener noreferrer">故宫博物院官方国际站 · 建筑探索</a></li>
+            <li><a href="https://artsandculture.google.com/story/the-unique-design-of-the-three-great-halls-the-palace-museum/1AWx0BllwxhDJg?hl=en" target="_blank" rel="noopener noreferrer">故宫博物院 × Google Arts &amp; Culture《三大殿的独特设计》</a></li>
+            <li><a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%92%8C%E6%AE%BF" target="_blank" rel="noopener noreferrer">中文维基百科：太和殿</a></li>
+            <li><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%92%8C%E6%AE%BF" target="_blank" rel="noopener noreferrer">中文维基百科：中和殿</a></li>
+            <li><a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E5%92%8C%E6%AE%BF" target="_blank" rel="noopener noreferrer">中文维基百科：保和殿</a></li>
+            <li><a href="https://whc.unesco.org/en/list/1714" target="_blank" rel="noopener noreferrer">UNESCO 世界遗产：北京中轴线——中国理想都城秩序的杰作</a></li>
+          </ul>
+          <p>以上链接仅在你主动点击时才会打开，页面本身不发起任何自动网络请求。</p>
+        </div>
+
+        <div class="chapter__body">
+          <h3>如何阅读本页</h3>
+          <p>本页所有正文都在文档流中，禁用 JavaScript 也能完整阅读。动画只作用于图形增强层，关闭后不会丢失任何一个数字或一条对联。若系统已开启「减弱动态效果」，装饰动画会自动停用；也可以随时用顶栏的按钮手动关闭。</p>
+
+          <h3>已知限制</h3>
+          <ul>
+            <li>建筑图为艺术性示意，非测绘复原；无法核验的历史构件细节未作推断。</li>
+            <li>未在真实 iOS 设备上实测抗锯齿与 GPU 表现，仅有本机模拟证据。</li>
+            <li>官方未公布中和殿与保和殿的含台基通高，故本页留空而非估算。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <h3>资料范围</h3>
+        <p>故宫博物院官方公开资料与公开百科条目；数字与匾联已逐条核对。</p>
+      </div>
+      <div>
+        <h3>作图说明</h3>
+        <p>本页建筑图为自绘艺术性示意（非测绘比例），不含任何实景照片或第三方图像。</p>
+      </div>
+      <div>
+        <h3>页面状态</h3>
+        <div id="status-bar" class="status-bar" role="status" aria-live="polite" aria-atomic="true">三殿导览已就绪，正文与线稿可直接阅读。</div>
+        <p style="margin-top:16px"><a class="site-nav__link" href="#intro" data-scroll-top>回到顶部</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<dialog id="index-dialog" class="index-dialog" aria-labelledby="index-dialog-title">
+  <button type="button" class="index-dialog__close" id="index-close" aria-label="关闭导览索引">
+    <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+  </button>
+  <h2 class="index-dialog__title" id="index-dialog-title">导览索引</h2>
+  <ul class="index-dialog__list">
+    <li><a class="index-dialog__link" href="#intro">序章 · 一道中轴，三重殿宇</a></li>
+    <li><a class="index-dialog__link" href="#taihe">壹 · 太和殿 —— 威仪</a></li>
+    <li><a class="index-dialog__link" href="#zhonghe">贰 · 中和殿 —— 节制</a></li>
+    <li><a class="index-dialog__link" href="#baohe">叁 · 保和殿 —— 文脉</a></li>
+    <li><a class="index-dialog__link" href="#time">时序 · 三殿同名，六次改名</a></li>
+    <li><a class="index-dialog__link" href="#compare">对照 · 三殿一眼可比</a></li>
+    <li><a class="index-dialog__link" href="#sources">来源与方法</a></li>
+  </ul>
+</dialog>
+
+<script type="application/json" id="hall-data">/*__HALL_DATA__*/</script>
+<!--__JS__-->
+</body>
+</html>

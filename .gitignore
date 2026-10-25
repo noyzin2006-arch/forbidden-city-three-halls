@@ -14,3 +14,7 @@ id_rsa*
 id_ed25519*
 *.db
 *.sqlite3
+
+# 测试与工具产物
+test-results/
+playwright-report/

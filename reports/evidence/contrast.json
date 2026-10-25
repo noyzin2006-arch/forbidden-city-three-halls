@@ -1,0 +1,389 @@
+{
+  "algorithm": "sRGB：c<=0.04045 ? c/12.92 : ((c+0.055)/1.055)^2.4；L=0.2126R+0.7152G+0.0722B；CR=(Lmax+0.05)/(Lmin+0.05)",
+  "generatedBy": "scripts/evidence.mjs",
+  "total": 38,
+  "passed": 38,
+  "failed": 0,
+  "pairs": [
+    {
+      "label": "深底正文",
+      "foreground": "text-primary",
+      "foregroundHex": "#F7F0DF",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 15.99,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "深底次级正文",
+      "foreground": "text-secondary",
+      "foregroundHex": "#D9CFB8",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 11.73,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "深底三级注释",
+      "foreground": "text-muted",
+      "foregroundHex": "#C8BDA3",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 9.74,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "面板上的标题",
+      "foreground": "text-primary",
+      "foregroundHex": "#F7F0DF",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 13.41,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "面板上的正文",
+      "foreground": "text-secondary",
+      "foregroundHex": "#D9CFB8",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 9.85,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "面板上的三级",
+      "foreground": "text-muted",
+      "foregroundHex": "#C8BDA3",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 8.17,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "浮层上的标题",
+      "foreground": "text-primary",
+      "foregroundHex": "#F7F0DF",
+      "background": "bg-raised",
+      "backgroundHex": "#263633",
+      "ratio": 11.15,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "浮层上的正文",
+      "foreground": "text-secondary",
+      "foregroundHex": "#D9CFB8",
+      "background": "bg-raised",
+      "backgroundHex": "#263633",
+      "ratio": 8.18,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "建筑舞台上的文字",
+      "foreground": "text-primary",
+      "foregroundHex": "#F7F0DF",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 16.75,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "舞台上的次级",
+      "foreground": "text-secondary",
+      "foregroundHex": "#D9CFB8",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 12.3,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面主文本",
+      "foreground": "text-on-paper",
+      "foregroundHex": "#222920",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 12.69,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面次文本",
+      "foreground": "text-paper-secondary",
+      "foregroundHex": "#514D42",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 7.17,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面三级",
+      "foreground": "text-paper-muted",
+      "foregroundHex": "#6B5F4C",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 5.3,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "金色强调（深底）",
+      "foreground": "accent-gold",
+      "foregroundHex": "#E8BD67",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 10.3,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "金色强调（面板）",
+      "foreground": "accent-gold",
+      "foregroundHex": "#E8BD67",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 8.64,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "青玉强调",
+      "foreground": "accent-jade",
+      "foregroundHex": "#A9D3B8",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 10.98,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "焦点色（深底）",
+      "foreground": "focus",
+      "foregroundHex": "#FFE1A1",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 14.3,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "成功态",
+      "foreground": "state-success",
+      "foregroundHex": "#A9E2BC",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 12.36,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "警告态",
+      "foreground": "state-warning",
+      "foregroundHex": "#FFE1A1",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 14.3,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "错误态",
+      "foreground": "state-danger",
+      "foregroundHex": "#FFB3B3",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 10.68,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "信息态",
+      "foreground": "state-info",
+      "foregroundHex": "#9ECDEB",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 10.71,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面成功态",
+      "foreground": "state-success-paper",
+      "foregroundHex": "#256241",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 6.15,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面警告态",
+      "foreground": "state-warning-paper",
+      "foregroundHex": "#805123",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 5.72,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面错误态",
+      "foreground": "state-danger-paper",
+      "foregroundHex": "#924024",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 5.99,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面信息态",
+      "foreground": "state-info-paper",
+      "foregroundHex": "#285B81",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 6.15,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "纸面朱色强调",
+      "foreground": "accent-vermilion",
+      "foregroundHex": "#874A26",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 5.88,
+      "required": 4.5,
+      "pass": true
+    },
+    {
+      "label": "深底控件边框",
+      "foreground": "border-dark",
+      "foregroundHex": "#82938A",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 5.61,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "面板控件边框",
+      "foreground": "border-dark",
+      "foregroundHex": "#82938A",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 4.71,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "浮层控件边框",
+      "foreground": "border-dark",
+      "foregroundHex": "#82938A",
+      "background": "bg-raised",
+      "backgroundHex": "#263633",
+      "ratio": 3.91,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "舞台描边",
+      "foreground": "border-dark",
+      "foregroundHex": "#82938A",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 5.88,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "纸面描边",
+      "foreground": "border-paper",
+      "foregroundHex": "#6B5F4C",
+      "background": "bg-paper",
+      "backgroundHex": "#F4ECD9",
+      "ratio": 5.3,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "建筑主轮廓线",
+      "foreground": "ink-line",
+      "foregroundHex": "#F7F0DF",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 16.75,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "建筑内部纹理线",
+      "foreground": "ink-line-soft",
+      "foregroundHex": "#9AA79B",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 7.59,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "琉璃瓦面",
+      "foreground": "tile-gold",
+      "foregroundHex": "#D4B368",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 9.47,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "朱柱",
+      "foreground": "tile-vermilion",
+      "foregroundHex": "#B24A2A",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 3.54,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "汉白玉台基",
+      "foreground": "stone-light",
+      "foregroundHex": "#E4DCC8",
+      "background": "bg-ink",
+      "backgroundHex": "#0C1110",
+      "ratio": 13.93,
+      "required": 3,
+      "pass": true
+    },
+    {
+      "label": "禁用态",
+      "foreground": "disabled-text",
+      "foregroundHex": "#82938A",
+      "background": "bg-page",
+      "backgroundHex": "#101716",
+      "ratio": 5.61,
+      "required": 2,
+      "pass": true
+    },
+    {
+      "label": "禁用态（面板）",
+      "foreground": "disabled-text",
+      "foregroundHex": "#82938A",
+      "background": "bg-panel",
+      "backgroundHex": "#1B2826",
+      "ratio": 4.71,
+      "required": 2,
+      "pass": true
+    }
+  ]
+}

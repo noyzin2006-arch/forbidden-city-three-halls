@@ -1,0 +1,18 @@
+{
+  "generatedBy": "scripts/evidence.mjs",
+  "url": "file:///Users/sheng/.minimax/sessions/mvs_75b1949fa6fd4faca4bf32200c377f4c/workspace/forbidden-city-three-halls/dist/index.html",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "domContentLoaded": 12.299999982118607,
+  "domInteractive": 10.399999976158142,
+  "loadEventEnd": 28.599999994039536,
+  "transferSize": 513788,
+  "decodedBodySize": 513488,
+  "firstContentfulPaint": 64,
+  "heroCtaVisible": true,
+  "documentHeight": 11348,
+  "interactionFeedbackMs": 4.9
+}

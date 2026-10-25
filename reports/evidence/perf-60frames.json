@@ -1,0 +1,14 @@
+{
+  "totalFrames": 258,
+  "sampled": 60,
+  "uniqueFrameIds": 60,
+  "strictlyIncreasing": true,
+  "distinctVisualFrames": 57,
+  "frameDeltaMedianMs": 16.7,
+  "frameDeltaP95Ms": 16.8,
+  "frameDeltaMaxMs": 16.8,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

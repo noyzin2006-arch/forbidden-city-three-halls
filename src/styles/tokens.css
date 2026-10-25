@@ -1,0 +1,198 @@
+/* ============================================================
+   tokens.css —— 唯一令牌真源
+   礼序 · 故宫外朝三大殿
+   规则：全站所有颜色 / 间距 / 圆角 / 阴影 / 层级 / 动效 / 字阶
+        只允许在此文件定义。组件样式一律引用 var(--*)。
+   ============================================================ */
+
+:root {
+  /* ---------- 背景层 ---------- */
+  --bg-page: #101716;
+  --bg-panel: #1B2826;
+  --bg-raised: #263633;
+  --bg-ink: #0C1110;
+  --bg-paper: #F4ECD9;
+
+  /* ---------- 文字层 ---------- */
+  --text-primary: #F7F0DF;
+  --text-secondary: #D9CFB8;
+  --text-muted: #C8BDA3;
+  --text-on-paper: #222920;
+  --text-paper-secondary: #514D42;
+  --text-paper-muted: #6B5F4C;
+
+  /* ---------- 强调层 ---------- */
+  --accent-gold: #E8BD67;
+  --accent-vermilion: #874A26;   /* 仅纸面强调 / SVG 装饰，不做深底小字 */
+  --accent-vermilion-light: #A85A2E; /* 纸面渐变的浅端 */
+  --accent-jade: #A9D3B8;
+
+  /* ---------- 描边层 ---------- */
+  --border-dark: #82938A;
+  --border-paper: #6B5F4C;
+
+  /* ---------- 语义层（深底） ---------- */
+  --state-success: #A9E2BC;
+  --state-warning: #FFE1A1;
+  --state-danger: #FFB3B3;
+  --state-info: #9ECDEB;
+
+  /* ---------- 语义层（纸底） ---------- */
+  --state-success-paper: #256241;
+  --state-warning-paper: #805123;
+  --state-danger-paper: #924024;
+  --state-info-paper: #285B81;
+
+  /* ---------- 焦点 / 禁用 ---------- */
+  --focus: #FFE1A1;
+  --disabled-text: #82938A;
+
+  /* ---------- 叠加层 ---------- */
+  --overlay-scrim: rgba(16, 23, 22, 0.84);
+
+  /* ---------- 打印 ---------- */
+  --print-bg: #ffffff;
+  --print-fg: #000000;
+
+  /* ---------- 建筑线稿材质（SVG 用） ---------- */
+  --tile-gold: #D4B368;
+  --tile-gold-deep: #8A6A32;
+  --tile-vermilion: #B24A2A;
+  --tile-vermilion-deep: #7A3A24;
+  --stone-light: #E4DCC8;
+  --stone-mid: #C6BCA4;
+  --ink-line: #F7F0DF;
+  --ink-line-soft: #9AA79B;
+
+  /* ---------- 字体族 ---------- */
+  --font-display: "Noto Serif SC Local", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+  --font-body: "Noto Sans SC Local", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-num: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* ---------- 字阶（比例 1.25） ---------- */
+  --type-caption: 12px;
+  --type-label: 14px;
+  --type-body: 16px;
+  --type-lead: 20px;
+  --type-h4: 25px;
+  --type-h3: 31px;
+  --type-h2: 39px;
+  --type-h1: 61px;
+  --type-metric: 48px;
+
+  --lh-caption: 1.5;
+  --lh-label: 1.45;
+  --lh-body: 1.7;
+  --lh-lead: 1.6;
+  --lh-heading: 1.26;
+  --lh-display: 1.16;
+  --lh-metric: 1.15;
+
+  --ls-caption: 0.12em;
+  --ls-label: 0.08em;
+  --ls-body: 0.015em;
+  --ls-lead: 0.01em;
+  --ls-heading: 0.01em;
+  --ls-display: 0.04em;
+
+  /* ---------- 间距（4px 基准） ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---------- 容器 ---------- */
+  --container-max: 1168px;
+  --container-pad: 64px;
+  --measure-text: 40ch;
+  --measure-lead: 30ch;
+
+  /* ---------- 圆角 ---------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* ---------- 描边 ---------- */
+  --border-width: 1px;
+  --border-width-focus: 2px;
+  --focus-offset: 2px;
+
+  /* ---------- 阴影层级 0–4 ---------- */
+  --shadow-0: none;
+  --shadow-1: 0 4px 12px rgba(0, 0, 0, 0.14);
+  --shadow-2: 0 10px 24px rgba(0, 0, 0, 0.2);
+  --shadow-3: 0 20px 48px rgba(0, 0, 0, 0.3);
+  --shadow-4: 0 28px 64px rgba(0, 0, 0, 0.4);
+
+  /* ---------- z-index ---------- */
+  --z-base: 0;
+  --z-scene: 1;
+  --z-content: 2;
+  --z-nav: 10;
+  --z-scrim: 20;
+  --z-dialog: 30;
+  --z-feedback: 40;
+  --z-focus: 50;
+
+  /* ---------- 动效时长 ---------- */
+  --dur-press: 120ms;
+  --dur-hover: 180ms;
+  --dur-ui: 240ms;
+  --dur-reveal: 480ms;
+  --dur-enter: 800ms;
+  --dur-hero: 1600ms;
+
+  /* ---------- 缓动曲线 ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-precision: cubic-bezier(0.22, 0.68, 0, 1.01);
+  --ease-linear: linear;
+
+  /* ---------- 最小可点区域 ---------- */
+  --tap-min: 44px;
+
+  /* ---------- 版式栅格 ---------- */
+  --nav-h: 72px;
+  --nav-h-mobile: 64px;
+  --stage-top: 88px;
+  --stage-top-mobile: 72px;
+}
+
+/* 断点覆盖：按「从宽到窄」书写，靠后的小断点覆盖靠前的大断点 */
+@media (max-width: 767px) {
+  :root {
+    --container-pad: 24px;
+    --nav-h: var(--nav-h-mobile);
+    --stage-top: var(--stage-top-mobile);
+  }
+}
+
+/* 移动端字阶覆盖（≤480px） */
+@media (max-width: 480px) {
+  :root {
+    --type-h1: 44px;
+    --type-h2: 36px;
+    --type-h3: 29px;
+    --type-h4: 23px;
+    --type-lead: 18px;
+    --type-metric: 36px;
+    --container-pad: 16px;
+    --nav-h: var(--nav-h-mobile);
+    --stage-top: var(--stage-top-mobile);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root { --container-pad: 32px; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  :root { --container-pad: 48px; }
+}

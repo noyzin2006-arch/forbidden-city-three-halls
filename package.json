@@ -1,0 +1,18 @@
+{
+  "name": "forbidden-city-three-halls",
+  "version": "1.0.0",
+  "private": true,
+  "description": "礼序 · 故宫外朝三大殿（太和殿 / 中和殿 / 保和殿）沉浸式单页网页",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "test:unit": "node --test tests/data.test.mjs tests/build.test.mjs tests/geometry.test.mjs tests/contrast.test.mjs",
+    "test:e2e": "playwright test",
+    "fonts": "node scripts/extract-glyphs.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

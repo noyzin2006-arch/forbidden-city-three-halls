@@ -1,0 +1,342 @@
+===== node --test =====
+命令: /opt/homebrew/Cellar/node/26.0.0/bin/node --test --test-reporter=tap tests/data.test.mjs tests/build.test.mjs tests/geometry.test.mjs tests/contrast.test.mjs
+退出码: 0
+耗时: 183ms
+------------------------------------------------------------
+TAP version 13
+# Subtest: 构建产物存在且非空
+ok 1 - 构建产物存在且非空
+  ---
+  duration_ms: 0.781792
+  type: 'test'
+  ...
+# Subtest: 单文件：无外部脚本 / 样式表 / 模块
+ok 2 - 单文件：无外部脚本 / 样式表 / 模块
+  ---
+  duration_ms: 0.743833
+  type: 'test'
+  ...
+# Subtest: 单文件：无运行时网络依赖
+ok 3 - 单文件：无运行时网络依赖
+  ---
+  duration_ms: 0.741792
+  type: 'test'
+  ...
+# Subtest: 链接里的 https 跳转仍然存在（用户主动点击才联网）
+ok 4 - 链接里的 https 跳转仍然存在（用户主动点击才联网）
+  ---
+  duration_ms: 0.22075
+  type: 'test'
+  ...
+# Subtest: 产物体积在预算内（硬门槛 1.2 MiB，目标 ≤900 KiB）
+ok 5 - 产物体积在预算内（硬门槛 1.2 MiB，目标 ≤900 KiB）
+  ---
+  duration_ms: 0.129084
+  type: 'test'
+  ...
+# Subtest: 字体已本地内嵌（不得出现远程字体 URL）
+ok 6 - 字体已本地内嵌（不得出现远程字体 URL）
+  ---
+  duration_ms: 0.162958
+  type: 'test'
+  ...
+# Subtest: 四张建筑 SVG 全部内联，且带可访问的 title / desc
+ok 7 - 四张建筑 SVG 全部内联，且带可访问的 title / desc
+  ---
+  duration_ms: 0.838458
+  type: 'test'
+  ...
+# Subtest: 正文与 halls.json 一致（三组名称 + 屋顶 + 面积 + 匾额 + 对联 + 开间）
+ok 8 - 正文与 halls.json 一致（三组名称 + 屋顶 + 面积 + 匾额 + 对联 + 开间）
+  ---
+  duration_ms: 1.182125
+  type: 'test'
+  ...
+# Subtest: 正文不依赖 JS 注入（HTML 里直接有全部三殿事实）
+ok 9 - 正文不依赖 JS 注入（HTML 里直接有全部三殿事实）
+  ---
+  duration_ms: 0.239791
+  type: 'test'
+  ...
+# Subtest: 注入标志全部替换完毕
+ok 10 - 注入标志全部替换完毕
+  ---
+  duration_ms: 0.357417
+  type: 'test'
+  ...
+# Subtest: hall-data 以 JSON 形式内嵌且可解析
+ok 11 - hall-data 以 JSON 形式内嵌且可解析
+  ---
+  duration_ms: 0.181166
+  type: 'test'
+  ...
+# Subtest: 构建可重复（两次构建字节一致）
+ok 12 - 构建可重复（两次构建字节一致）
+  ---
+  duration_ms: 56.870917
+  type: 'test'
+  ...
+# Subtest: tokens.css 之外没有裸 hex（唯一真源）
+ok 13 - tokens.css 之外没有裸 hex（唯一真源）
+  ---
+  duration_ms: 0.770583
+  type: 'test'
+  ...
+# Subtest: 深色底正文 ≥ 4.5:1
+ok 14 - 深色底正文 ≥ 4.5:1
+  ---
+  duration_ms: 0.380667
+  type: 'test'
+  ...
+# Subtest: 纸面文字 ≥ 4.5:1
+ok 15 - 纸面文字 ≥ 4.5:1
+  ---
+  duration_ms: 0.139709
+  type: 'test'
+  ...
+# Subtest: 强调色与语义色：深底正文级 ≥ 4.5:1
+ok 16 - 强调色与语义色：深底正文级 ≥ 4.5:1
+  ---
+  duration_ms: 0.561125
+  type: 'test'
+  ...
+# Subtest: 纸面语义色 ≥ 4.5:1
+ok 17 - 纸面语义色 ≥ 4.5:1
+  ---
+  duration_ms: 0.150166
+  type: 'test'
+  ...
+# Subtest: 控件边框与必要图标 ≥ 3:1
+ok 18 - 控件边框与必要图标 ≥ 3:1
+  ---
+  duration_ms: 0.200875
+  type: 'test'
+  ...
+# Subtest: 禁用态 ≥ 2:1（仍可辨认，且不只靠颜色表意）
+ok 19 - 禁用态 ≥ 2:1（仍可辨认，且不只靠颜色表意）
+  ---
+  duration_ms: 0.06575
+  type: 'test'
+  ...
+# Subtest: accent-vermilion 不被用作深底小字（规划明确只作纸面强调）
+ok 20 - accent-vermilion 不被用作深底小字（规划明确只作纸面强调）
+  ---
+  duration_ms: 0.037583
+  type: 'test'
+  ...
+# Subtest: 对比度函数自检（黑对白 = 21:1）
+ok 21 - 对比度函数自检（黑对白 = 21:1）
+  ---
+  duration_ms: 0.058791
+  type: 'test'
+  ...
+# Subtest: 三殿数据整体合法
+ok 22 - 三殿数据整体合法
+  ---
+  duration_ms: 1.185291
+  type: 'test'
+  ...
+# Subtest: 恰好三殿，id 与顺序固定
+ok 23 - 恰好三殿，id 与顺序固定
+  ---
+  duration_ms: 0.08625
+  type: 'test'
+  ...
+# Subtest: 屋顶类型只允许三个值
+ok 24 - 屋顶类型只允许三个值
+  ---
+  duration_ms: 0.048833
+  type: 'test'
+  ...
+# Subtest: 开间数：11×5 / 3×3 / 9×5（是间数，不是米数）
+ok 25 - 开间数：11×5 / 3×3 / 9×5（是间数，不是米数）
+  ---
+  duration_ms: 0.39625
+  type: 'test'
+  ...
+# Subtest: 建筑面积：2377 / 580 / 1240 m²
+ok 26 - 建筑面积：2377 / 580 / 1240 m²
+  ---
+  duration_ms: 0.045125
+  type: 'test'
+  ...
+# Subtest: 殿高：26.92 / 29 / 29.50 m
+ok 27 - 殿高：26.92 / 29 / 29.50 m
+  ---
+  duration_ms: 0.04025
+  type: 'test'
+  ...
+# Subtest: 通高：只有太和殿有官方数据，其余必须是 null（不得用台基高度推算）
+ok 28 - 通高：只有太和殿有官方数据，其余必须是 null（不得用台基高度推算）
+  ---
+  duration_ms: 0.04575
+  type: 'test'
+  ...
+# Subtest: 台基高度 8.13 m 不得被加到任何殿高上
+ok 29 - 台基高度 8.13 m 不得被加到任何殿高上
+  ---
+  duration_ms: 0.187125
+  type: 'test'
+  ...
+# Subtest: 匾额逐字固定
+ok 30 - 匾额逐字固定
+  ---
+  duration_ms: 0.08775
+  type: 'test'
+  ...
+# Subtest: 对联逐字固定（含全角标点，不换行）
+ok 31 - 对联逐字固定（含全角标点，不换行）
+  ---
+  duration_ms: 0.20425
+  type: 'test'
+  ...
+# Subtest: 保和殿殿试必须写明「乾隆五十四年（1789）起」，不得说成所有朝代恒定
+ok 32 - 保和殿殿试必须写明「乾隆五十四年（1789）起」，不得说成所有朝代恒定
+  ---
+  duration_ms: 0.16725
+  type: 'test'
+  ...
+# Subtest: 用途 / 沿革 / 细节 / 来源 四类资料齐备
+ok 33 - 用途 / 沿革 / 细节 / 来源 四类资料齐备
+  ---
+  duration_ms: 0.14225
+  type: 'test'
+  ...
+# Subtest: 沿革覆盖 1420 / 1562 / 1645 三个改名节点
+ok 34 - 沿革覆盖 1420 / 1562 / 1645 三个改名节点
+  ---
+  duration_ms: 0.051458
+  type: 'test'
+  ...
+# Subtest: 不含 emoji
+ok 35 - 不含 emoji
+  ---
+  duration_ms: 0.13
+  type: 'test'
+  ...
+# Subtest: 比较条比例：按面积线性映射到 [0,1]
+ok 36 - 比较条比例：按面积线性映射到 [0,1]
+  ---
+  duration_ms: 0.053125
+  type: 'test'
+  ...
+# Subtest: 校验器能抓到坏数据
+ok 37 - 校验器能抓到坏数据
+  ---
+  duration_ms: 0.109667
+  type: 'test'
+  ...
+# Subtest: 度量格式化
+ok 38 - 度量格式化
+  ---
+  duration_ms: 0.042959
+  type: 'test'
+  ...
+# Subtest: 四张图都有 1200×720 舞台、title / desc 与九个图层分组
+ok 39 - 四张图都有 1200×720 舞台、title / desc 与九个图层分组
+  ---
+  duration_ms: 0.844708
+  type: 'test'
+  ...
+# Subtest: SVG 内不得出现文字、位图、滤镜、外部引用
+ok 40 - SVG 内不得出现文字、位图、滤镜、外部引用
+  ---
+  duration_ms: 0.52
+  type: 'test'
+  ...
+# Subtest: SVG 颜色只来自 CSS 变量（不得有裸 hex / 颜色名）
+ok 41 - SVG 颜色只来自 CSS 变量（不得有裸 hex / 颜色名）
+  ---
+  duration_ms: 0.323
+  type: 'test'
+  ...
+# Subtest: 屋顶类型互不相同，且与规划一致
+ok 42 - 屋顶类型互不相同，且与规划一致
+  ---
+  duration_ms: 0.110584
+  type: 'test'
+  ...
+# Subtest: 开间数：太和 11×5、中和 3×3、保和 9×5
+ok 43 - 开间数：太和 11×5、中和 3×3、保和 9×5
+  ---
+  duration_ms: 0.117583
+  type: 'test'
+  ...
+# Subtest: 太和殿脊兽：骑凤仙人 1 + 神兽 10，共 11 个可数图形
+ok 44 - 太和殿脊兽：骑凤仙人 1 + 神兽 10，共 11 个可数图形
+  ---
+  duration_ms: 0.872458
+  type: 'test'
+  ...
+# Subtest: 保和殿檐角小兽 9 只
+ok 45 - 保和殿檐角小兽 9 只
+  ---
+  duration_ms: 0.084542
+  type: 'test'
+  ...
+# Subtest: 中和殿：四条斜脊分别可动 + 中央宝顶
+ok 46 - 中和殿：四条斜脊分别可动 + 中央宝顶
+  ---
+  duration_ms: 0.060333
+  type: 'test'
+  ...
+# Subtest: 保和殿：歇山屋面 + 殿试纸卷分组 + 减柱造虚线负形
+ok 47 - 保和殿：歇山屋面 + 殿试纸卷分组 + 减柱造虚线负形
+  ---
+  duration_ms: 0.081958
+  type: 'test'
+  ...
+# Subtest: 三殿各自带独立的动效元数据
+ok 48 - 三殿各自带独立的动效元数据
+  ---
+  duration_ms: 0.180375
+  type: 'test'
+  ...
+# Subtest: 所有图元落在 60..1140 的安全边界内
+ok 49 - 所有图元落在 60..1140 的安全边界内
+  ---
+  duration_ms: 0.926667
+  type: 'test'
+  ...
+# Subtest: 图注声明「非测绘 / 艺术性示意」
+ok 50 - 图注声明「非测绘 / 艺术性示意」
+  ---
+  duration_ms: 0.094333
+  type: 'test'
+  ...
+1..50
+# tests 50
+# suites 0
+# pass 50
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 131.597167
+
+
+===== playwright test =====
+命令: /opt/homebrew/Cellar/node/26.0.0/bin/node /Users/sheng/.minimax/sessions/mvs_75b1949fa6fd4faca4bf32200c377f4c/workspace/forbidden-city-three-halls/node_modules/@playwright/test/cli.js test
+退出码: 0
+耗时: 33245ms
+------------------------------------------------------------
+
+Running 14 tests using 1 worker
+
+  ✓   1 tests/e2e.spec.mjs:43:3 › SFLIP-001 浏览器验收 › A1/A2 —— file:// 打开：零 console error、零 pageerror、零外部请求 (1.5s)
+  ✓   2 tests/e2e.spec.mjs:56:3 › SFLIP-001 浏览器验收 › A2 —— http:// 打开：同样零错误、零外部请求 (982ms)
+  ✓   3 tests/e2e.spec.mjs:70:3 › SFLIP-001 浏览器验收 › A10 —— 三殿五类事实全部在 DOM 中（不依赖 JS 注入） (200ms)
+  ✓   4 tests/e2e.spec.mjs:85:3 › SFLIP-001 浏览器验收 › A3 —— 320 / 375 / 480 / 768 / 1024 / 1440 均无横向溢出 (4.0s)
+  ✓   5 tests/e2e.spec.mjs:110:3 › SFLIP-001 浏览器验收 › A3 —— 所有可交互控件实际包围盒 ≥ 44×44 CSS px (666ms)
+  ✓   6 tests/e2e.spec.mjs:142:3 › SFLIP-001 浏览器验收 › A4 —— 键盘可完成：跳转主内容 → 导览索引 → 选殿 → Esc 关闭 → 焦点归还 (1.6s)
+  ✓   7 tests/e2e.spec.mjs:180:3 › SFLIP-001 浏览器验收 › A4 —— 注释热点可键盘展开并折叠 (997ms)
+  ✓   8 tests/e2e.spec.mjs:197:3 › SFLIP-001 浏览器验收 › A5 —— 减弱动效：三殿全文与 SVG 依然可见，采样帧不再增长 (1.7s)
+  ✓   9 tests/e2e.spec.mjs:233:3 › SFLIP-001 浏览器验收 › A7 —— 连续 60 帧：frameId 唯一、时间戳严格递增、≥30 帧出现视觉变化 (4.5s)
+  ✓  10 tests/e2e.spec.mjs:325:3 › SFLIP-001 浏览器验收 › A8 —— CLS ≤ 0.1 (7.3s)
+  ✓  11 tests/e2e.spec.mjs:359:3 › SFLIP-001 浏览器验收 › 四态：默认 / empty / loading / error / success 各有具体文案 (4.0s)
+  ✓  12 tests/e2e.spec.mjs:380:3 › SFLIP-001 浏览器验收 › V1–V6 —— 三殿截图与可辨识性证据 (3.5s)
+  ✓  13 tests/e2e.spec.mjs:409:3 › SFLIP-001 浏览器验收 › 文字放大 200% 不丢内容、不重叠 (931ms)
+  ✓  14 tests/e2e.spec.mjs:424:3 › SFLIP-001 浏览器验收 › 禁用 JavaScript 后仍能完整阅读三殿事实（无白屏） (723ms)
+
+  14 passed (33.0s)
+

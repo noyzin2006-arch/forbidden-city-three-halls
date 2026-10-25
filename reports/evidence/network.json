@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/evidence.mjs",
+  "url": "file:///Users/sheng/.minimax/sessions/mvs_75b1949fa6fd4faca4bf32200c377f4c/workspace/forbidden-city-three-halls/dist/index.html",
+  "totalRequests": 1,
+  "external": [],
+  "file": 1,
+  "data": 0,
+  "all": [
+    {
+      "url": "file:///Users/sheng/.minimax/sessions/mvs_75b1949fa6fd4faca4bf32200c377f4c/workspace/forbidden-city-three-halls/dist/index.html",
+      "method": "GET",
+      "type": "document"
+    }
+  ]
+}

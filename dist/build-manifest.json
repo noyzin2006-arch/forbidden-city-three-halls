@@ -1,0 +1,31 @@
+{
+  "file": "dist/index.html",
+  "bytes": 513488,
+  "sha256": "e9b55c19f275f338e895dcb7c9313c4c641ef38352fadd8f1f21c899efaa12cd",
+  "fontsEmbedded": 4,
+  "fontBytes": 191652,
+  "cssFiles": [
+    "tokens.css",
+    "base.css",
+    "layout.css",
+    "motion.css"
+  ],
+  "jsFiles": [
+    "status.js",
+    "data.js",
+    "navigation.js",
+    "motion.js",
+    "boot.js"
+  ],
+  "svgFiles": [
+    "src/art/axis.svg",
+    "src/art/taihe.svg",
+    "src/art/zhonghe.svg",
+    "src/art/baohe.svg"
+  ],
+  "halls": [
+    "taihe",
+    "zhonghe",
+    "baohe"
+  ]
+}

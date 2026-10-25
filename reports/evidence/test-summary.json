@@ -1,0 +1,25 @@
+{
+  "command": "npm test",
+  "generatedBy": "scripts/run-tests.mjs",
+  "exitCode": 0,
+  "unit": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "durationMs": 183
+  },
+  "e2e": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "durationMs": 33245
+  },
+  "total": 64,
+  "passed": 64,
+  "failed": 0,
+  "skipped": 0
+}

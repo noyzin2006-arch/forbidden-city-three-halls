@@ -1,0 +1,32 @@
+[
+  {
+    "w": 320,
+    "scrollW": 320,
+    "clientW": 320
+  },
+  {
+    "w": 375,
+    "scrollW": 375,
+    "clientW": 375
+  },
+  {
+    "w": 480,
+    "scrollW": 480,
+    "clientW": 480
+  },
+  {
+    "w": 768,
+    "scrollW": 768,
+    "clientW": 768
+  },
+  {
+    "w": 1024,
+    "scrollW": 1024,
+    "clientW": 1024
+  },
+  {
+    "w": 1440,
+    "scrollW": 1440,
+    "clientW": 1440
+  }
+]
