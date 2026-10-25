@@ -1,0 +1,8 @@
+{
+  "task": "制作一个极其酷炫精美的介绍故宫太和殿、中和殿、保和殿三大殿的网页，有各种炫酷的动画与艺术表达",
+  "round1": {
+    "brief": "handoff/briefs/制作一个极其酷炫精美的介绍故宫太和殿、中和殿、保和殿三大殿的网页，有各种炫酷的动画与艺术表达.md",
+    "plan": "handoff/plans/制作一个极其酷炫精美的介绍故宫太和殿、中和殿、保和殿三大殿的网页，有各种炫酷的动画与艺术表达.md",
+    "guardedPaths": ["index.html","web/","assets/","styles/","scripts/","src/","public/"]
+  }
+}
