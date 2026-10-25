@@ -19,8 +19,8 @@ console error 0 / pageerror 0 / 外部自动请求 0，CLS 0，60 帧采样帧�
 | brief_sha | `8ef8ad9d58ea0c45916574535e171dc9112aca9f` |
 | 规划案来源 commit | `f915eedfb2120ba824b7ea6e47ecb33f999f8d67`（网页 ChatGPT 推送） |
 | 简报来源 commit | `3644cb0`（本机） |
-| **被测实现 commit** | `bb9cd3f0b4b37042521b65d7b23a8f9ab7597588`（产品代码）+ `473d586`（字体子集去时间戳 + 本报告） |
-| **被测产物** | `dist/index.html` sha256 `5ede1bd35e7eb8f2a478a737bf7f73ef550ab60650651d82f41893ce541287ca` —— 由最终工作树**两次独立执行「字体子集 → 构建」**复现得到（两次 sha256 完全相同） |
+| **被测实现 commit** | `bb9cd3f0b4b37042521b65d7b23a8f9ab7597588` —— 全部产品代码（HTML / CSS / JS / SVG / 数据 / 测试 / 证据）都在此提交内，本报告与「字体子集去时间戳」加固紧随其后落库 |
+| **被测产物** | `dist/index.html` sha256 `5ede1bd35e7eb8f2a478a737bf7f73ef550ab60650651d82f41893ce541287ca` —— 由最终工作树**两次独立执行「字体子集 → 构建」**复现得到（两次 sha256 完全相同），因此该 sha 精确标识被测产物，与提交先后无关 |
 | 平台 | macOS 26.4.1 (25E253) · arm64 |
 | Node / npm | v26.0.0 / 11.12.1 |
 | 浏览器 | Google Chrome **155.0.0.0**（Playwright `channel: 'chrome'`，headless） |
