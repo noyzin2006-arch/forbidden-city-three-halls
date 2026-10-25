@@ -6,13 +6,13 @@
     "height": 900
   },
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
-  "domContentLoaded": 12.299999982118607,
-  "domInteractive": 10.399999976158142,
-  "loadEventEnd": 28.599999994039536,
-  "transferSize": 513788,
-  "decodedBodySize": 513488,
-  "firstContentfulPaint": 64,
+  "domContentLoaded": 20.19999998807907,
+  "domInteractive": 17.599999994039536,
+  "loadEventEnd": 46.79999998211861,
+  "transferSize": 513688,
+  "decodedBodySize": 513388,
+  "firstContentfulPaint": 128,
   "heroCtaVisible": true,
   "documentHeight": 11348,
-  "interactionFeedbackMs": 4.9
+  "interactionFeedbackMs": 8.3
 }

@@ -1,9 +1,9 @@
 {
   "file": "dist/index.html",
-  "bytes": 513488,
-  "sha256": "e9b55c19f275f338e895dcb7c9313c4c641ef38352fadd8f1f21c899efaa12cd",
+  "bytes": 513388,
+  "sha256": "5ede1bd35e7eb8f2a478a737bf7f73ef550ab60650651d82f41893ce541287ca",
   "fontsEmbedded": 4,
-  "fontBytes": 191652,
+  "fontBytes": 191580,
   "cssFiles": [
     "tokens.css",
     "base.css",

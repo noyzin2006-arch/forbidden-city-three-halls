@@ -214,6 +214,23 @@ for (const item of PLAN) {
   console.log(`  ${item.file.padEnd(24)} ${(bytes / 1024).toFixed(1)} KiB`);
 }
 
+// 抹掉 head 表里的 created/modified 时间戳，让子集产物字节可复现
+// 注意：fontTools 的时间戳开关在字体对象上（TTFont.recalcTimestamp），不在 head 表上。
+const STAMP = `
+import sys
+from fontTools.ttLib import TTFont
+for p in sys.argv[1:]:
+    f = TTFont(p)
+    f.recalcTimestamp = False
+    f['head'].created = 0
+    f['head'].modified = 0
+    f.flavor = 'woff2'
+    f.save(p)
+`;
+for (const item of PLAN) {
+  run(['-c', STAMP, path.join(FONTS_DIR, item.file)]);
+}
+
 const ofl = path.join(SOURCE_DIR, 'Noto-OFL.txt');
 if (fs.existsSync(ofl)) {
   fs.copyFileSync(ofl, path.join(LICENSES_DIR, 'Noto-OFL.txt'));
